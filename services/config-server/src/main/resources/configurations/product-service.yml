@@ -1,0 +1,22 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/product
+        username: kirtish
+        password: kirtish
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: validate
+        database: postgresql
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+    flyway:
+        baseline-on-migrate: true
+        enabled: true
+        baseline-version: 0
+        baseline-description: Initial version
+        username: kirtish
+        password: kirtish
+
+server:
+    port: 8050
